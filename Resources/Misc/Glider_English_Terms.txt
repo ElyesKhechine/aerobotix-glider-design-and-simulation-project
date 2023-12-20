@@ -1,0 +1,15 @@
+Chord (mm)	150
+Radius (mm)	
+Thickness (%)	
+Origin (%)	
+Pitch (degrees)	
+Halo (mm)	
+Halo (mm)	
+Line thickness (%)	
+Reverse
+Data box		
+Camber line		
+X grid (mm)		
+Y grid (mm)	
+Paper width (mm)	
+Paper height (mm)	

@@ -1,0 +1,438 @@
+Notes d’évolution PredimRC
+
+V2.66d (19.01.2022)
+- correction calcul VLM Cm'CG avec forte flèche et fort effilement
+
+V2.66c (29.12.2021)
+- correction N/KV.U PropMatch
+
+V2.66b (05.11.2021)
+- correction calcul "marge statique corrigée"
+
+V2.66a (23.08.2021)
+- correction bug geometrie aile (corde emp. 2nd panneau)
+- ajout fuselage a entree d'air frontale (EXPERIMENTAL)
+
+V2.66 (13.08.2021)
+- ajout fonction PropMatch (voir notice)
+- amélioration calcul taux de montée à faible puissance
+- correction intensité et régime moteur en vol
+- ajout points de fonctionnement moteur
+- ajout marge statique corrigée (étude sensibilité au centrage)
+
+V2.65e (15.03.2021)
+- amélioration calcul Cz stab pour formules tandem, canard, etc.
+- amélioration calcul traînée induite de biplan (corrélation de Prandtl)
+
+V2.65d (15.12.2020)
+- correction Jmax hélice
+- correction Vt hélice
+- correction calcul VLM pour ailes en flèche
+
+V2.65c (30.09.2020)
+- corrections cosmétiques
+
+V2.65b (19.08.2020)
+- ajout valeurs Cp0, Ct0, eta_max et J_max hélice
+- correction affichage courbes de Cz si profil1 = no-foil
+- correction commentaire de surface de dérive
+
+V2.65a (04.08.2020)
+- correction fonctions import/export modèle corrompues sur la v2.65
+- correction calcul de couple incidence intégrale
+
+V2.65 (30.07.2020)
+- ajout calcul formel de Cz total (= Cz_aile + Cz_stab * S_stab / S_aile)
+- ajout champs Cz total dans les listes de choix de l'onglet 7-ComparaisonPerfos
+- correction calculs perfos Cz/Cx à vitesse imposée avec Cz total
+
+V2.64g (07.07.2020)
+- correction titre et commentaire perfos en palier (distinguo plané / vol au moteur)
+
+V2.64f (06.05.2020)
+- correction analyse dynamique si pas de moteur
+
+V2.64e (29.04.2020)
+- correction Cxi et Cxp stab canard
+
+V2.64d (11.04.2020)
+- ajout évolution vitesse périphérique de pale en fonction de Vx
+- correction dessin 3D du dièdre panneau 5
+
+V2.64c (13.02.2020)
+- ajout possibilité de positionner en hauteur un stab en V
+- ajout possibilité d'ajouter une sous-dérive à un stab en V
+
+V2.64b (11.11.2019)
+- correction bug de calcul VLM pour certaines formes d'aile
+
+V2.64a (29.08.2019)
+- correction calcul couple servo stab pendulaire
+- correction position de dérive dans export dxf
+- ajout position CG, noms et calages profils dans export dxf
+- ajout possibilité de saisir une formule dans le facteur d'échelle
+- ajout possibilité de saisir un dossier de travail relatif d'un niveau inférieur(ex. : "\..\dossier")
+
+V2.64 (24.07.2019)
+- amélioration interpolation Cx=f(Cz,Re) pour profil stab
+- ajout export dxf profil et modèle (3 vues)
+
+V2.63c (05.06.2019)
+- amélioration interpolations Cx=f(Cz,Re)
+- correction import géométrie profil depuis .xls
+- correction message d'erreur lors de l'annulation du facteur d'échelle
+- correction message de confirmation d'export des perfos
+
+V2.63b (24.05.2019)
+- restauration liens entre checkbox perfos et cellules
+
+V2.63a (18.05.2019)
+- restauration pente de vol en vue 3D
+- restauration mise à plat du stab en vue 2D
+- correction affichage polaires profil au chargement d'un profil
+
+V2.63 (07.05.2019)
+- séparation fiches profils de l'application
+- refonte interface "1-profils" et code interpolation
+- modification saisie Alpha0/Cm0 formule Panknin
+- ajout facteur d'échelle modèle
+- correction graphique pente Vx
+- correction polaires VLM Xfoil @ ReRef
+- amélioration résolution taux de montée
+- amélioration stabilité et rapidité d'exécution
+
+V2.62a (27.01.2019)
+- ajout sauvegarde donnees onglet "2-allongement" avec donnees modeles
+- ajout fonction de renommage des fiches profil
+- ajout controle d'erreur au lancement de l'application
+- correction ouverture fiche profil #3 depuis onglet "3-Geometrie"
+- correction calculs lignes de fonctionnement profil
+- refonte mode de calcul onglet "2-allongement"
+- amelioration gestion du quota de fiches profils
+- allegement application
+
+V2.62 (19.12.2018)
+- ajout page menu
+- transfert paramètres d'application dans la page menu
+- réorganisation onglets 1 à 6
+- ajout sauvergarde/restauration des données d'analyse dynamique
+- ajout bornage de Cz (+/-1.5) du calcul VLM avec gouvernes
+- amélioration modèles exemples
+- amélioration cosmétiques
+- poursuite nettoyage de code
+
+V2.61c (29.11.2018)
+- ajout braquage de gouvernes dans graphes de moments et de répartition de Cx
+- correction calcul VLM CmCG
+- amélioration gestion des conflits avec d'autres classeurs excel ouverts
+- amélioration modèles exemples
+- amélioration cosmétiques
+- nettoyage de code
+
+V2.61b (24.11.2018)
+- correction compatibilité avec Excel 2016
+
+V2.61a (23.11.2018)
+- ajout bouton activation / désactivation des gouvernes
+- amélioration corrélation d'offset Cx et CmCG au braquage des gouvernes
+- amélioration gestion des conflits avec d'autres classeurs excel ouverts
+
+V2.61 (19.11.2018)
+- ajout module d'analyse détaillée de perfos et de comparaison de modèles (jusqu'à 5)
+- ajout calcul VLM des gouvernes d'ailes : volets, ailerons et incidence variable
+- ajout calcul VLM de moment de roulis et de tangage des ailes autour du CG
+- ajout courbes VLM de répartition de moment de tangage des ailes autour du CG
+- ajout rafraîchissement automatique de la courbe VLM Oswald/Cz au chargement du modèle
+- ajout fiche de centrage par pesée
+- ajout fiche de synthèse de la conception en cours
+- ajout dossier modèles exemples
+- refonte module VLM et routines associées
+- refonte calculs et affichage des lignes de fonctionnement profils (sur 10 cordes)
+- refonte calculs perfos
+- refonte étiquettes des données pour analyse détaillée et comparaison modèles
+- correction calcul moment d'aile autour du CG (CmCG) si aile volante
+- correction calcul taux de montée au moteur si profils sélectionnés très différents
+- améliorations vitesse d'exécution et stabilité du code
+- améliorations cosmétiques
+
+V2.60a (19.08.2018)
+- ajout fiches profils "planche" (lisse + braquage)
+- réorganisation polaires perfos planeur / avion
+- ajout graphique contribution au Cx en palier pour la masse 2
+- ajout graphique contribution au Cx à vitesse constante 1 et 2
+- ajout graphique ligne de fonctionnement locales profil à vitesse constante
+
+V2.60 (29.07.2018)
+- passage à licence Creative Commons 
+
+V2.58g (09.02.2018)
+- amélioration calcul taux de montée pour les appareils faiblement motorisés
+- correction bug de calcul de taux de montée pour la masse 2
+- import/export des calculs de motorisation avec les données modèles
+- ajout profil de stab "- no foil -" pour aile volante
+- modification label d'ouverture de stab plat (180° => --- / 180°)
+- ajout gestion des versions des fiches modèle
+
+V2.58f (18.09.2017)
+- traînée d'accessoires calculée et affichée séparemment de celle du fuselage
+- meilleure desciption du traitement des ailes multi-profils
+
+V2.58e (23.08.2017)
+- amélioration fluidité et robustesse de la gestion des profils
+- calcul de vrillage de Panknin transféré dans une fenêtre flottante
+- ajout polaire de Cz de stab à vitesse constante / Cz_aile variable
+- ajout d'une zone libre en "3-Géométrie", pour indicateur(s) perso. par ex.
+
+V2.58d (10.08.2017)
+- correction bug sélection et sauvegarde profil pour calcul servo incidence intégrale
+- correction bug modification épaisseur des profils symétriques
+- correction calcul moment d'inertie longitudinal des masses ponctuelles
+- amélioration onglet "3-Géométrie"
+- ajout possibilité de turbulateur d'intrados (pour profils symétriques par ex.)
+- ajout calcul du diamètre d'hélice à n pales
+
+V2.58c (03.04.2017)
+- accélération de la régénération des listes profils et Reynolds
+- amélioration du rafraîchissement des polaires profils
+- troncature des listes de sélection profils
+
+V2.58b (27.02.2017)
+- correction bug excel de décalage des objets dessins
+- correction bug modification d'épaisser des profils symétriques
+- correction bug import modèle avec profil inconnu
+- amélioration rapidité et stabilité des listes de profils
+- amélioration cosmétique onglet "1-Profils"
+- ajout invertion intrados/extrados profil (pour simulation vol dos)
+- ajout sauvegarde de l'onglet "6-Servos"
+- notice : biplan et export CSV mieux décrits
+
+v2.58 (21.10.2016) :
+- correction prise en compte surface d'accessoires si pas de fuselage
+- correction bug saisie nCrit et position turbulateur
+- correction erreur unité de vitesse constante pour l'allongement optimal (m/s au lieu de km/h)
+- correction échelle polaires Cx total avion
+- correction bug non-affichage aléatoire des polaires Cx avion
+- butée de marge statique passée à 50% pour permettre l'identification de la limite avant de centrage
+- ajout commentaire sur longueur gouverne de profondeur pour calcul couple servo
+- ajout graphiques des moments autour du CG (pour chaque profil étudié)
+- ajout dessin profil dans fiches profils
+- masquage bandeau Excel 2007 et supérieur
+- amélioration gestion annulation de tâches Xfoil
+- compatibilité Excel 2013 et Excel 2016 32/64 bit
+
+v2.57f (23.01.2016) :
+- correction transfert profil vers buffer (couleur texte et nombre de points)
+
+v2.57e (01.01.2016) :
+- correction amortissement en tangage (analyse dynamique)
+- correction condition d'équilibre aile volante (analyse dynamique)
+- correction allure visuelle du fuselage en plané (vue 3D)
+
+v2.57d (24.12.2015) :
+- ajout fonction RAZ modèle
+- amélioration lissage (cubique) des courbes hélices
+- amélioration corrélation de Helmbold-Polhamus (y/c version lite)
+- correction zones d'impression
+- correction givrages calculs après plusieurs imports de fiches profil
+- améliorations cosmétiques
+
+v2.57c (02.08.2015) :
+- correction affichage polaires Xfoil avec lignes de fonctionnement profil
+- correction rafraîchissement des polaires Alpha0,Cz0,Cm0 /Re quand polaire Re.Cz^0.5=Cste activée
+- correction restauration des profils sélectionnés quand annulation soufflage
+- correction coefficient d'efficacité de fuselage en tangage si Vstab < 0.2
+- correction vérification profil3 à l'importation modèle
+- correction exemple biplan dans notice
+- ajout export accélération verticale dans AnalyseDyn
+- rafraîchisseemnt notice
+
+v2.57b (04.05.2015) :
+- ajout dossiers par défaut (profils, fiches profils, modèles, export csv)
+- importation automatique de fiches profils avec modèle
+- ajout fonction de restauration de l'intégrité des calculs lors de l'ouverture d'un autre fichier Excel
+- ajout fonction de lissage profil ("SMOOTH")
+
+v2.57 (25.04.2015) :
+- correction Cx dérive si surface stab = 0
+- correction vitesse dans calcul allongement optimal à Re constant
+- contrôle %zoom (fixé à 75%, doit être identique sur toutes les feuilles sous Excel2013)
+- ajout export (.csv) perfos (coefficients + forces) en plané, Re constant, montée au moteur et analyse dynamique
+- nouvelle désignation des cordes d'ailes et de stab et modification commentaires
+- ajout plage d'incidences de soufflage
+- ajout calcul répartition masses, inerties et plomb de centrage pour analyse dynamique
+- ajout graphique temporel des paramètres aéro en analyse dynamique
+- réglages d'analyse dynamique indépendants des réglages d'analyse perfo
+- ajout feuille de graphiques pour affichages annexes
+- ajout graphiques d'évolution des Cx en palier
+- ajout fiche profil KFm
+- compatibilité Windows 8 et 8.1
+- version Lite : ajout zone de commentaires
+- version Lite : suppression de la version Google Sheet (utiliser PlanMaker Office sur Android)
+
+v2.56 (16.11.2014) :
+- lissage par spline du profil bufférisé 
+- modification graphique des coordonnées profil par Clic&Drag
+- vérification de la présence d'Xfoil dans le dossier de travail
+- ajout polaires de type 1 et 2 interpolées à Re fixé par utilisateur
+- ajout lignes de fonctionnemnt profil (polaires de type 2 étendu) pour chaque corde de l'aile
+- redistribution des Cz des polaires avion (meilleure couverture de l'enveloppe de vol)
+- amélioration calcul Cp0 et Ct hélice (par constructeur / gamme)
+- ajout graphique de régime et intensité moteur en fonction de la vitesse de palier
+- amélioration rafraîchissement automatique polaires profil
+- message "Mémoire insuffisante pour afficher en entier" erradiqué
+- 100% compatible Excel2013
+
+v2.55 (30.08.2014) :
+- ajout polaire profil en Alpha0, Cm0 et Cx0 en fct de Re (détection Re critique)
+- sauvegarde des formules dans les champs de saisie
+- autorisation de la saisie directe des vrillages
+- nouvelle méthode de saisie d'une aile multiprofils (voir notice)
+- affichage de Ri moteur (pour information)
+- principe de dimensionnement moteur développé dans notice
+- ajout de signets dans la notice
+
+v2.54 (11.07.2014) :
+- ajout d'un atelier profil (300 points max) avec buffer et interfaçage Xfoil
+- lecture des principaux formats de profils (.dat, .txt, .koo, .cor; .prf, .pro)
+- nouvelles fonctions de manipulation profils (interpolation, derotate, etc.)
+- pilotage direct d'Xfoil (suppression des fichiers polaire.bat et cmd.txt)
+- passage à Xfoil 6.99
+- ajout de stab en Vé inversé avec sur-dérive
+- nouveau calcul de KV, rendement et masse moteur
+- correction interpolXfoil si Re > Re max profil
+- correction calcul envergure totale si type fuselage = jet
+- correction calcul Ct et eta hélice si multimoteur
+- amélioration calcul de hauteur de stab en Vé
+- amélioration rafraîchissement automatique polaires profil
+- amélioration algorithme de calcul de taux de montée
+- tri et compactage des fiches profil quasi instantané
+- méthode de calcul de foyer latéral (voir notice)
+- ajout de zones de commentaire (profils et modèle)
+
+v2.53 (25.05.2014) :
+- formule biplan traitée (voir notice)
+- interpolation complète Cx_stab=f(Cz,Re)
+- Cp/J déduit de Ct&N/J (au lieu d'un calcul a priori)
+- masquage des courbes Czs non calculées
+- échelle Vx définie par l'utilisateur
+- calcul de l'envergure réelle
+- correction affichage 3D si largeur fuselage nulle
+- ajout de modèles exemples
+
+v2.52 (13.05.2014) :
+- prise en compte de la portance de stab dans la portance globale
+- prise en compte de la déflexion de sillage d'un stab canard dans l'analyse VLM
+- ajout d'un second jeu de Reynolds de référence pour petit-gros et aviation légère
+- nouvel algorithme de résolution de taux de montée
+- nouveau modèle d'hélice générique, en Cp-Ct/J, calé sur données UIUC
+- rafraîchissement automatique des polaires profils au changement de profil ou de Reynolds
+- amélioration de la gestion du décrochage en analyse dynamique
+- message "Mémoire insuffisante pour afficher en entier" quasiment erradiqué
+- ajout d'une déclinaison Excel2010 (.xlsm)
+
+v2.51b (23.02.2014) :
+- pilotage Xfoil : compatibilité Excel2010 améliorée
+
+v2.51 (17.11.2013) :
+- simulation dynamique en tangage avec résolution Newtonienne complète (Fx,Fz,My)
+- corrélation de Helmbold-Polhamus (dCz/dAlpha 2D->3D) remplace corrélation de Prandlt
+- corrélation d'efficacité de portance du fuselage étendue aux fuselages très larges et aux jets
+- prise en compte du vrillage de l'aile dans les calculs de calage
+- calcul motorisation : refonte algorithme pour résolution second régime en montée
+- ajout traînée d'accessoires (zone fuselage)
+- vue 3D : allure visuelle en vol plané ou vol au moteur
+- ajout polaires de pente de descente (/Vx et /Cz)
+- polaires profils : pas échelle Cx de 0.01
+- polaires avions : pas échelle Vx de 10 (standard) ou de 50 km/h (petit-gros, racer)
+- correction de bugs d'affichage des polaires profil ("- no foil -" et caractères spéciaux)
+
+v2.50 (19.09.2013) :
+- PredimRC arrive à maturité et devient open-source (licence GNU)
+- visualisation 3D du modèle (sous excel!)
+- intégration du pilotage Xfoil à l'application principale
+- nouvelle interpolation Cx=f(Re,Cz) des polaires profil Xfoil, précise ("morphing 2D") et ultra-rapide (recalcul en temps réel)
+- nouvelle modélisation Cx0 stab (dérivée de l'interpolation des polaires profil Xfoil)
+- lignes de fonctionnement Cx/Cz profil à Re variable (palier) et constant (course aux pylones, vol au moteur)
+- calages et courbes de Cz déclinés à chaque profil étudié
+- saisie GMP connu (thermique y compris)
+- résolutions itératives (courbe Oswald = f(Cz), perfos en montée au moteur) quasi instantanées
+- import/export de données modèles et de fiches profil
+- récupération et conversion des anciennces données modèle et profils (v2.3x et v2.4x)
+- gestion de la BDD profils nettement plus rapide
+- correction calcul finesse en virage stabilisé
+- amélioration de l'interface utilisateur
+- reformulation de quelques commentaires
+- compatibilité améliorée avec Excel 2007 et supérieur
+- refonte de la notice utilisateur
+
+v2.41 :
+- prise en compte  de l'inclinaison de l'aile (virage / spirale) pour les calculs de finesse et de performances au moteur
+- ajout d'une option dans l'onglet motorisation pour l'affichage de l'équilibre des forces (traînée / traction hélice) en paliers
+- correction d'un bug sur la traînée de fuselage sous incidence
+
+v2.40 :
+- ajout d'une option d'optimisation de l'allongement pour avion (vitesse fixe)
+- ajout configuration muti-moteurs
+- refonte des performances au moteur en montée (calcul "exact" : résolution de l'équilibre des forces dans le repère avion pour chaque point de fonctionnement)
+- ajout du calcul des bras de levier servo / gouverne
+
+v2.39 : 
+- incidence fuselage pilotée, au choix, par celle de l'aile (config "classique") ou celle du stab (incidence intégrale, volets de courbure)
+- correction d'un bug mineur sur les coches de perfo à Re constant
+- correction d'une erreur de prise en compte des empennages en Vé pour le calcul des perfos
+
+v2.38 : 
+- affinage de la prise en compte des hélices dans les calculs de motorisation
+- correction d'un bug mineur sur le calcul de la vitesse ascentionnelle
+- correction d'un bug sur le débattement des servos
+
+v2.37 : 
+- calcul VLM étendu au stabilisateur
+- amélioration de la prise en compte de l'intéraction fuselage / voilures pour le CG des canards
+- correction d'un bug mineur sur la selection du profil 3 
+
+v2.36 : 
+- correction d’un bug sur le calage de stab
+- amélioration du calcul de motorisation
+
+v2.35 : 
+- amélioration de l’interface xFoil (relissage profil, ncrit)
+- amélioration du calcul des calages
+- ajout de la formule de Panknin pour le calcul du vrillage d’une aile volante
+- prise en compte plus fine du fuselage dans les calculs de perfo
+- profil de réglage maintenant indépendant des profils pré-sélectionnés
+- ajout d’un espacement entre les deux demi-stab pour le dessin du modèle
+- ajout d’une aide pour le dessin du modèle
+- dessin du modèle auto-zoomant (mais toujours orthonormé)
+- création d’une version Lite (Excel97 / OpenOffice3)
+
+v2.34 : 
+- refonte de tous les calculs de couple de servo
+
+v2.33 : 
+- correction d’un oubli de prise en compte de la dérive dans les perfos d’une aile volante
+- correction d’un bug de prise en compte du profil d’aile sélectionné dans le graphique de Cz stab
+
+v2.32 : 
+- ajout d’une fonction de collage spécial
+- activation du menu contextuel de la souris (clic droit)
+
+v2.31 : 
+- ajout d’un calculateur d’équivalence stab normal <> stab V
+- copie des données profil facilitée
+- prise en compte des déflexions négatives de volet de courbure (BddProfils)
+- correction d’un bug de prise en compte du coefficient d’Owald dans la traînée induite de l’aile
+- ajout d’un menu dédié à PredimRc au lieu des menus Excel classiques
+
+v2.30 :
+- ajout d’un outil de pilotage d’Xfoil et de gestion de base de données profils / polaires
+- prise en compte de la formule canard
+- amélioration de l’interpolation de polaires en Re => meilleure précisions des calculs d’allongement optimal et de perfos
+- ajout dans les calculs de perfos des traînées induites stab et fuselage => perfos à fort Cz beaucoup plus réalistes dans le cas de fuselage ou de stab très volumineux
+- amélioration du calcul du Vé longitudinal (formulation Thierry Platon)
+- ajout de graphiques de perfo à Re constant (course aux pylônes)
+- correction d’une erreur de calcul sur le couple des servos (gouvernes classiques)
+- ajout de nouveaux angles d’ouverture de stab en Vé (90°, 95°, 100°)
+- prises en compte des règles d’équivalences en Cos²/Sin² d’un stab en Vé 
+- ajout de deux profils asymétrique pour stab
+- améliorations cosmétiques : meilleure intégration des boutons de gestion d’échelle, graphique de dessin de modèle indiquant les foyers et le CG
