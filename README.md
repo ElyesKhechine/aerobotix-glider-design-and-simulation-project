@@ -6,11 +6,11 @@
 
 ## Introduction
 
-This project, conducted by a team of 4 members at AerobotiX INSAT Club, focuses on the design, simulation, and assembly of an ultralight glider aircraft. Our goal was to create an efficient and structurally sound aircraft for recreational flying.
+This project focuses on the design, simulation, and assembly of an ultralight glider aircraft. Our goal was to create an efficient and structurally sound aircraft for recreational flying. Dedicated efforts were made to optimize every aspect of the aircraft, ensuring both performance and safety.
 
 ## Project Scope
 
-Commencing from August 12, 2022, to August 25, 2022, this project involved meticulous design, simulation, and assembly phases. Our 4-member team dedicated efforts to optimize every aspect of the aircraft, ensuring both performance and safety.
+Commencing from August 12, 2022, to August 25, 2022, this project was conducted by a team of 4 members from AerobotiX INSAT Club. It involved meticulous design, simulation, and assembly phases.
 
 ## Technical Details
 
@@ -21,18 +21,11 @@ Commencing from August 12, 2022, to August 25, 2022, this project involved metic
 
 ## Project Presentation
 
-For a detailed overview of the project, including methodologies, findings, and outcomes, please refer to the [Project Presentation](https://docs.google.com/presentation/d/e/2PACX-1vTsW1N3W1YSvEJk3JFrCracrbrgYmyUIAcd7KNhNLnCnoJQZnKR9SeIlvHqWr0Ynw/pub?start=false&loop=false&delayms=3000).
-
-## Getting Started
-
-### Installation
-
-1. Ensure compatibility and proper setup of design software such as AutoCAD, PredimRC, and XFOIL.
-2. Familiarize yourself with aerodynamics principles and aircraft design concepts.
+For a detailed overview of the project, including methodologies, findings, and outcomes, please refer to the [project presentation](https://docs.google.com/presentation/d/e/2PACX-1vTsW1N3W1YSvEJk3JFrCracrbrgYmyUIAcd7KNhNLnCnoJQZnKR9SeIlvHqWr0Ynw/pub?start=false&loop=false&delayms=3000).
 
 ### Usage
 
-1. Begin by designing the aircraft's components using AutoCAD or similar software.
+1. Begin by designing the aircraft's components using AutoCAD or similar software following the methodologies outlined in this project.
 2. Perform aerodynamic analysis using PredimRC and XFOIL to optimize wing and stabilizer designs.
 3. Proceed with the assembly of the aircraft components according to the finalized design.
 
